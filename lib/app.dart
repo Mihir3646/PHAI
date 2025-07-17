@@ -13,7 +13,7 @@ class App extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       routes: {
-        '/': (context) => const MyHomePage(title: 'Relaunch Programming'),
+        '/home': (context) => const MyHomePage(title: 'Relaunch Programming'),
       },
       home: const OnboardingStep1(),
     );
