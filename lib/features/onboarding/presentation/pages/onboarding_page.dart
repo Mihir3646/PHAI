@@ -42,15 +42,6 @@ class OnboardingPage extends GetView<OnboardingController> {
                     child: const Text('Skip'),
                   ),
                   const Spacer(),
-                  Obx(
-                    () => Visibility(
-                      visible: controller.page.value > 0,
-                      child: TextButton(
-                        onPressed: controller.back,
-                        child: const Text('Back'),
-                      ),
-                    ),
-                  ),
                   const SizedBox(width: 8),
                   Obx(
                     () => ElevatedButton(

@@ -19,6 +19,7 @@ class App extends StatelessWidget {
             ? AppRoutes.home
             : AppRoutes.onboarding;
     return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Relaunch Programming',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
