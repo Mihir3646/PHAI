@@ -8,7 +8,7 @@ class PythonExecutionResult {
   PythonExecutionResult({required this.output, required this.error});
 }
 
-class BuiltinsModule extends PythonModule {
+final class BuiltinsModule extends PythonModule {
   BuiltinsModule.from(super.moduleDelegate) : super.from();
 
   PythonFunction get _execFunc => PythonFunction.from(getFunction('exec'));
