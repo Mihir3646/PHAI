@@ -62,5 +62,5 @@ flutter {
 }
 
 dependencies {
-    implementation("com.github.python-ffi:python_ffi_android:0.2.0")
+    //    implementation("com.github.python-ffi:python_ffi_android:0.2.0")
 }
