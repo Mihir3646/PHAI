@@ -3,83 +3,70 @@ import 'package:get/get.dart';
 import 'package:relaunch_programming/routes.dart';
 
 import '../controller/onboarding_controller.dart';
-import '../widgets/slide_card.dart';
-import '../widgets/dots_indicator.dart';
+import '../widgets/progress_dots.dart';
+import 'intro_page.dart';
+import 'privacy_page.dart';
+import 'theme_choice_page.dart';
 
 class OnboardingPage extends GetView<OnboardingController> {
-  OnboardingPage({super.key});
+  const OnboardingPage({super.key});
 
-  final _pageController = PageController();
-
-  final _slides = const [
-    (
-      'https://assets9.lottiefiles.com/packages/lf20_iwmd6pyr.json',
-      'Welcome',
-      'Discover new possibilities'
-    ),
-    (
-      'https://assets9.lottiefiles.com/packages/lf20_touohxv0.json',
-      'Learn',
-      'Build your skills quickly'
-    ),
-    (
-      'https://assets9.lottiefiles.com/packages/lf20_w51pcehl.json',
-      'Achieve',
-      'Reach your goals faster'
-    ),
+  static final _pages = [
+    const IntroPage(),
+    const PrivacyPage(),
+    const ThemeChoicePage(),
   ];
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
     return Scaffold(
       body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.all(16),
-          child: Column(
-            children: [
-              Expanded(
-                child: PageView.builder(
-                  controller: _pageController,
-                  itemCount: _slides.length,
-                  onPageChanged: controller.pageIndex,
-                  itemBuilder: (context, index) {
-                    final slide = _slides[index];
-                    return SlideCard(
-                      animationUrl: slide.$1,
-                      title: slide.$2,
-                      subtitle: slide.$3,
-                    );
-                  },
-                ),
+        child: Column(
+          children: [
+            Expanded(
+              child: PageView(
+                controller: controller.pageController,
+                onPageChanged: (i) => controller.page.value = i,
+                children: _pages,
               ),
-              const SizedBox(height: 24),
-              Obx(
-                () => DotsIndicator(
-                  controller: _pageController,
-                  count: _slides.length,
-                ),
+            ),
+            const SizedBox(height: 24),
+            const ProgressDots(),
+            const SizedBox(height: 24),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Row(
+                children: [
+                  TextButton(
+                    onPressed: controller.skip,
+                    child: const Text('Skip'),
+                  ),
+                  const Spacer(),
+                  Obx(
+                    () => Visibility(
+                      visible: controller.page.value > 0,
+                      child: TextButton(
+                        onPressed: controller.back,
+                        child: const Text('Back'),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 8),
+                  Obx(
+                    () => ElevatedButton(
+                      onPressed: controller.next,
+                      child: Text(
+                        controller.page.value == _pages.length - 1
+                            ? 'Done'
+                            : 'Next',
+                      ),
+                    ),
+                  ),
+                ],
               ),
-              const SizedBox(height: 24),
-            ],
-          ),
-        ),
-      ),
-      floatingActionButton: Obx(
-        () => FloatingActionButton(
-          onPressed: () {
-            if (controller.pageIndex.value == _slides.length - 1) {
-              controller.completeOnboarding();
-              Get.offAllNamed(Routes.home);
-            } else {
-              _pageController.nextPage(
-                duration: const Duration(milliseconds: 300),
-                curve: Curves.easeInOut,
-              );
-            }
-          },
-          backgroundColor: colorScheme.primary,
-          child: const Icon(Icons.arrow_forward),
+            ),
+            const SizedBox(height: 16),
+          ],
         ),
       ),
     );
