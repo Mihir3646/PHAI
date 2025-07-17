@@ -5,10 +5,10 @@ packages:
     dependency: transitive
     description:
       name: archive
-      sha256: "2fde1607386ab523f7a36bb3e7edb43bd58e6edaf2ffb29d8a6d578b297fdbbd"
+      sha256: cb6a278ef2dbb298455e1a713bda08524a175630ec643a242c399c932a0a1f7d
       url: "https://pub.dev"
     source: hosted
-    version: "4.0.7"
+    version: "3.6.1"
   args:
     dependency: transitive
     description:
@@ -89,6 +89,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.4.0"
+  cli_util:
+    dependency: transitive
+    description:
+      name: cli_util
+      sha256: ff6785f7e9e3c38ac98b2fb035701789de90154024a75b6cb926445e83197d1c
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.4.2"
   clock:
     dependency: transitive
     description:
@@ -300,10 +308,10 @@ packages:
     dependency: transitive
     description:
       name: image
-      sha256: "4e973fcf4caae1a4be2fa0a13157aa38a8f9cb049db6529aa00b4d71abc4d928"
+      sha256: f31d52537dc417fdcde36088fdf11d191026fd5e4fae742491ebd40e5a8bea7d
       url: "https://pub.dev"
     source: hosted
-    version: "4.5.4"
+    version: "4.3.0"
   intl:
     dependency: "direct main"
     description:
@@ -396,10 +404,10 @@ packages:
     dependency: "direct main"
     description:
       name: lottie
-      sha256: c5fa04a80a620066c15cf19cc44773e19e9b38e989ff23ea32e5903ef1015950
+      sha256: "377d87b8dcef640c04717e93afb86a510f0e1117a399ab94dc4b3f39c85eaa87"
       url: "https://pub.dev"
     source: hosted
-    version: "3.3.1"
+    version: "3.3.0"
   markdown:
     dependency: transitive
     description:
@@ -560,14 +568,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.8"
-  posix:
-    dependency: transitive
-    description:
-      name: posix
-      sha256: "6323a5b0fa688b6a010df4905a56b00181479e6d10534cecfecede2aa55add61"
-      url: "https://pub.dev"
-    source: hosted
-    version: "6.0.3"
   printing:
     dependency: "direct main"
     description:
@@ -580,50 +580,42 @@ packages:
     dependency: "direct main"
     description:
       name: python_ffi
-      sha256: "1a952a3374adecf49bdefcece69ebce45f08f1c0a8dd064b41157220dd213c40"
+      sha256: "077ec233fc640c4558724dc24dd50a6ee24563934f65d951844cc7b97344b02a"
       url: "https://pub.dev"
     source: hosted
-    version: "0.2.2"
+    version: "0.4.4"
   python_ffi_cpython:
     dependency: transitive
     description:
       name: python_ffi_cpython
-      sha256: "0820590fad8c645473e17ff0902698f53cdb1fcd12f328e7a3d79c0f277f96fb"
+      sha256: aed5c84fdd2fb0cc2a97f5db0308847f8b71beede578556afc392f51cfb73412
       url: "https://pub.dev"
     source: hosted
-    version: "0.2.2"
+    version: "0.4.4+1"
   python_ffi_cpython_dart:
     dependency: transitive
     description:
       name: python_ffi_cpython_dart
-      sha256: ca487d971a7d478f4db62c3255158ff1593380be35ce338a49b769f071b3d41a
+      sha256: "0a70042544ffb327113256445ba2b44c69e354eaa63c13e8270e099f2d60bbc1"
       url: "https://pub.dev"
     source: hosted
-    version: "0.2.2"
+    version: "0.4.4"
   python_ffi_dart:
     dependency: transitive
     description:
       name: python_ffi_dart
-      sha256: "97b0a151afbbc62e1ce78e99e7a849ec2e19905eb7a70fe3557ee2451498ead1"
+      sha256: "9c11a990d488822512b0324384fa06849aa356f63d13b4bc244178e3684d32cc"
       url: "https://pub.dev"
     source: hosted
-    version: "0.2.2"
+    version: "0.4.4"
   python_ffi_interface:
     dependency: transitive
     description:
       name: python_ffi_interface
-      sha256: ce46085c8738b65afc34155cac12197b997baa586763335dd9f5237db7306df8
+      sha256: cb4b5c918b9b4f68f584bedb3c71c2b3ac8887239df13c360c973c9a2e13395a
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.2"
-  python_ffi_platform_interface:
-    dependency: transitive
-    description:
-      name: python_ffi_platform_interface
-      sha256: "64181bdb8337c2a9b75ec7d46626128240fa355325d86140dac337e1ae484a73"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.0.2+1"
+    version: "0.2.0"
   qr:
     dependency: transitive
     description:
