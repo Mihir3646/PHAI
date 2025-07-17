@@ -4,18 +4,26 @@ import 'package:python_ffi/python_ffi.dart';
 import 'package:relaunch_programming/features/python_learning/domain/usecases/execute_python_code_usecase.dart';
 
 class MockPythonFfi extends Mock implements PythonFfi {}
+class MockPythonModule extends Mock implements PythonModule {}
+class MockPythonFunction extends Mock implements PythonFunction {}
 
 void main() {
   test('ExecutePythonCodeUseCase captures output', () async {
-    final mock = MockPythonFfi();
-    PythonFfi.instance = mock;
-    when(() => mock.importModule('builtins')).thenReturn(MockPythonModule());
-    when(() => mock.stdout).thenReturn('out');
-    when(() => mock.stderr).thenReturn('');
+    final ffi = MockPythonFfi();
+    final module = MockPythonModule();
+    final func = MockPythonFunction();
+
+    PythonFfi.instance = ffi;
+
+    when(() => ffi.importModule('builtins', any())).thenReturn(module);
+    when(() => module.getFunction('exec')).thenReturn(func);
+    when(() => func.call(any())).thenReturn(null);
+    when(() => module.getAttribute<String>('__out')).thenReturn('out');
+    when(() => module.getAttribute<String>('__err')).thenReturn('');
+
     final usecase = ExecutePythonCodeUseCase();
     final result = await usecase('print(1)');
+
     expect(result.output, 'out');
   });
 }
-
-class MockPythonModule extends Mock implements PythonFfiModule {}
