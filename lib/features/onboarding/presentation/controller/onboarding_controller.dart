@@ -1,8 +1,7 @@
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-
-import '../../../routes.dart';
+import 'package:relaunch_programming/routes.dart';
 
 class OnboardingController extends GetxController {
   final box = GetStorage();
@@ -30,13 +29,13 @@ class OnboardingController extends GetxController {
       box.write(hasOnboardedKey, true);
       Get.offAllNamed(AppRoutes.home);
     } else {
-      pageController.nextPage(duration: 300.ms, curve: Curves.ease);
+      pageController.nextPage(duration: 300.milliseconds, curve: Curves.ease);
     }
   }
 
   void back() {
     if (page.value > 0) {
-      pageController.previousPage(duration: 300.ms, curve: Curves.ease);
+      pageController.previousPage(duration: 300.milliseconds, curve: Curves.ease);
     }
   }
 
