@@ -11,7 +11,6 @@ class CodeEditorWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return CodeField(
       controller: controller,
-      language: python,
       textStyle: const TextStyle(fontFamily: 'monospace'),
       theme: githubTheme,
     );
