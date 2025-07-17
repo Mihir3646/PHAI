@@ -11,6 +11,9 @@ import 'features/dashboard/dashboard_page.dart';
 import 'features/home/home_page.dart';
 import 'features/settings/settings_page.dart';
 import 'features/profile/profile_page.dart';
+import 'features/python_learning/bindings.dart';
+import 'features/python_learning/presentation/pages/lesson_list_page.dart';
+import 'features/python_learning/presentation/pages/lesson_detail_page.dart';
 import 'routes.dart';
 
 class App extends StatelessWidget {
@@ -52,6 +55,15 @@ class App extends StatelessWidget {
           name: AppRoutes.onboarding,
           page: () => const OnboardingPage(),
           binding: OnboardingBinding(),
+        ),
+        GetPage(
+          name: AppRoutes.pythonLearning,
+          page: () => const LessonListPage(),
+          binding: PythonLearningBinding(),
+        ),
+        GetPage(
+          name: AppRoutes.pythonLearningDetail,
+          page: () => const LessonDetailPage(),
         ),
       ],
     );
