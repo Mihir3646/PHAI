@@ -13,7 +13,6 @@ class CodeEditorWidget extends StatelessWidget {
       data: const CodeThemeData(styles: githubTheme),
       child: CodeField(
         controller: controller,
-        language: python,
         textStyle: const TextStyle(fontFamily: 'monospace'),
       ),
     );

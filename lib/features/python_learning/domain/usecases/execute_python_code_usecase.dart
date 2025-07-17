@@ -11,7 +11,7 @@ class PythonExecutionResult {
 class BuiltinsModule extends PythonModule {
   BuiltinsModule.from(super.moduleDelegate) : super.from();
 
-  PythonFunction get _execFunc => getFunction('exec');
+  PythonFunction get _execFunc => PythonFunction.from(getFunction('exec'));
 
   void exec(String code) => _execFunc.call(<Object?>[code]);
 
