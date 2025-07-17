@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'features/onboarding/presentation/pages/onboarding_steps.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -11,7 +12,10 @@ class App extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(title: 'Relaunch Programming'),
+      routes: {
+        '/': (context) => const MyHomePage(title: 'Relaunch Programming'),
+      },
+      home: const OnboardingStep1(),
     );
   }
 }
