@@ -41,22 +41,26 @@ class _LessonDetailPageState extends State<LessonDetailPage> {
             Expanded(child: CodeEditorWidget(controller: codeController)),
             const SizedBox(height: 16),
             Obx(() => Text(controller.output.value)),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                ElevatedButton(
-                  onPressed: controller.previousLesson,
-                  child: const Text('Previous'),
-                ),
-                ElevatedButton(
-                  onPressed: controller.nextLesson,
-                  child: const Text('Next'),
-                ),
-              ],
+          ],
+        ),
+      ),
+      bottomNavigationBar: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            ElevatedButton(
+              onPressed: controller.previousLesson,
+              child: const Text('Previous'),
+            ),
+            ElevatedButton(
+              onPressed: controller.nextLesson,
+              child: const Text('Next'),
             ),
           ],
         ),
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
           await controller.runCode(codeController.text);
