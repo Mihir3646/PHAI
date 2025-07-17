@@ -1,21 +1,40 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
-import 'features/onboarding/presentation/pages/onboarding_steps.dart';
+import 'package:get/get.dart';
+import 'package:get_storage/get_storage.dart';
+
+import 'features/onboarding/bindings.dart';
+import 'features/onboarding/presentation/pages/onboarding_page.dart';
+import 'features/onboarding/presentation/controller/onboarding_controller.dart';
+import 'routes.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    final box = GetStorage();
+    final initialRoute =
+        box.read(OnboardingController.hasOnboardedKey) == true
+            ? AppRoutes.home
+            : AppRoutes.onboarding;
+    return GetMaterialApp(
       title: 'Relaunch Programming',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      routes: {
-        '/': (context) => const MyHomePage(title: 'Relaunch Programming'),
-      },
-      home: const OnboardingStep1(),
+      initialRoute: initialRoute,
+      getPages: [
+        GetPage(
+          name: AppRoutes.home,
+          page: () => const MyHomePage(title: 'Relaunch Programming'),
+        ),
+        GetPage(
+          name: AppRoutes.onboarding,
+          page: () => const OnboardingPage(),
+          binding: OnboardingBinding(),
+        ),
+      ],
     );
   }
 }
