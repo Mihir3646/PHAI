@@ -9,10 +9,13 @@ class CodeEditorWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CodeField(
-      controller: controller,
-      textStyle: const TextStyle(fontFamily: 'monospace'),
-      theme: githubTheme,
+    return CodeTheme(
+      data: const CodeThemeData(styles: githubTheme),
+      child: CodeField(
+        controller: controller,
+        language: python,
+        textStyle: const TextStyle(fontFamily: 'monospace'),
+      ),
     );
   }
 }
