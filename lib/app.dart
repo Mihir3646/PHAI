@@ -6,6 +6,11 @@ import 'package:get_storage/get_storage.dart';
 import 'features/onboarding/bindings.dart';
 import 'features/onboarding/presentation/pages/onboarding_page.dart';
 import 'features/onboarding/presentation/controller/onboarding_controller.dart';
+import 'features/dashboard/dashboard_binding.dart';
+import 'features/dashboard/dashboard_page.dart';
+import 'features/home/home_page.dart';
+import 'features/settings/settings_page.dart';
+import 'features/profile/profile_page.dart';
 import 'routes.dart';
 
 class App extends StatelessWidget {
@@ -16,7 +21,7 @@ class App extends StatelessWidget {
     final box = GetStorage();
     final initialRoute =
         box.read(OnboardingController.hasOnboardedKey) == true
-            ? AppRoutes.home
+            ? AppRoutes.dashboard
             : AppRoutes.onboarding;
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
@@ -27,8 +32,21 @@ class App extends StatelessWidget {
       initialRoute: initialRoute,
       getPages: [
         GetPage(
+          name: AppRoutes.dashboard,
+          page: () => const DashboardPage(),
+          binding: DashboardBinding(),
+        ),
+        GetPage(
           name: AppRoutes.home,
-          page: () => const MyHomePage(title: 'Relaunch Programming'),
+          page: () => const HomePage(),
+        ),
+        GetPage(
+          name: AppRoutes.settings,
+          page: () => const SettingsPage(),
+        ),
+        GetPage(
+          name: AppRoutes.profile,
+          page: () => const ProfilePage(),
         ),
         GetPage(
           name: AppRoutes.onboarding,

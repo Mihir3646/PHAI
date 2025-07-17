@@ -1,6 +1,9 @@
 class AppRoutes {
   AppRoutes._();
 
-  static const home = '/';
+  static const dashboard = '/';
+  static const home = '/home';
+  static const settings = '/settings';
+  static const profile = '/profile';
   static const onboarding = '/onboarding';
 }

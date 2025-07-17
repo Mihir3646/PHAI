@@ -17,7 +17,7 @@ class OnboardingController extends GetxController {
   void onInit() {
     super.onInit();
     if (hasOnboarded) {
-      Future.microtask(() => Get.offAllNamed(AppRoutes.home));
+      Future.microtask(() => Get.offAllNamed(AppRoutes.dashboard));
     }
     pageController.addListener(() {
       page.value = pageController.page?.round() ?? 0;
@@ -27,7 +27,7 @@ class OnboardingController extends GetxController {
   void next() {
     if (page.value == 2) {
       box.write(hasOnboardedKey, true);
-      Get.offAllNamed(AppRoutes.home);
+      Get.offAllNamed(AppRoutes.dashboard);
     } else {
       pageController.nextPage(duration: 300.milliseconds, curve: Curves.ease);
     }
@@ -41,6 +41,6 @@ class OnboardingController extends GetxController {
 
   void skip() {
     box.write(hasOnboardedKey, true);
-    Get.offAllNamed(AppRoutes.home);
+    Get.offAllNamed(AppRoutes.dashboard);
   }
 }
