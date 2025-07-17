@@ -1,0 +1,879 @@
+{
+  "version": "1.0",
+  "root": "PHAI",
+  "generatedAt": "2025-07-17T08:00:00.000000Z",
+  "paths": [
+    {
+      "p": "README.md",
+      "t": "file"
+    },
+    {
+      "p": "analysis_options.yaml",
+      "t": "file"
+    },
+    {
+      "p": "android",
+      "t": "dir"
+    },
+    {
+      "p": "android/app",
+      "t": "dir"
+    },
+    {
+      "p": "android/app/build.gradle.kts",
+      "t": "file"
+    },
+    {
+      "p": "android/app/src",
+      "t": "dir"
+    },
+    {
+      "p": "android/app/src/debug",
+      "t": "dir"
+    },
+    {
+      "p": "android/app/src/debug/AndroidManifest.xml",
+      "t": "file"
+    },
+    {
+      "p": "android/app/src/main",
+      "t": "dir"
+    },
+    {
+      "p": "android/app/src/main/AndroidManifest.xml",
+      "t": "file"
+    },
+    {
+      "p": "android/app/src/main/java",
+      "t": "dir"
+    },
+    {
+      "p": "android/app/src/main/java/io",
+      "t": "dir"
+    },
+    {
+      "p": "android/app/src/main/java/io/flutter",
+      "t": "dir"
+    },
+    {
+      "p": "android/app/src/main/java/io/flutter/plugins",
+      "t": "dir"
+    },
+    {
+      "p": "android/app/src/main/kotlin",
+      "t": "dir"
+    },
+    {
+      "p": "android/app/src/main/kotlin/org",
+      "t": "dir"
+    },
+    {
+      "p": "android/app/src/main/kotlin/org/mihir",
+      "t": "dir"
+    },
+    {
+      "p": "android/app/src/main/kotlin/org/mihir/relaunch",
+      "t": "dir"
+    },
+    {
+      "p": "android/app/src/main/kotlin/org/mihir/relaunch/MainActivity.kt",
+      "t": "file"
+    },
+    {
+      "p": "android/app/src/main/res",
+      "t": "dir"
+    },
+    {
+      "p": "android/app/src/main/res/drawable",
+      "t": "dir"
+    },
+    {
+      "p": "android/app/src/main/res/drawable/launch_background.xml",
+      "t": "file"
+    },
+    {
+      "p": "android/app/src/main/res/drawable-v21",
+      "t": "dir"
+    },
+    {
+      "p": "android/app/src/main/res/drawable-v21/launch_background.xml",
+      "t": "file"
+    },
+    {
+      "p": "android/app/src/main/res/mipmap-hdpi",
+      "t": "dir"
+    },
+    {
+      "p": "android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+      "t": "file"
+    },
+    {
+      "p": "android/app/src/main/res/mipmap-mdpi",
+      "t": "dir"
+    },
+    {
+      "p": "android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+      "t": "file"
+    },
+    {
+      "p": "android/app/src/main/res/mipmap-xhdpi",
+      "t": "dir"
+    },
+    {
+      "p": "android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+      "t": "file"
+    },
+    {
+      "p": "android/app/src/main/res/mipmap-xxhdpi",
+      "t": "dir"
+    },
+    {
+      "p": "android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+      "t": "file"
+    },
+    {
+      "p": "android/app/src/main/res/mipmap-xxxhdpi",
+      "t": "dir"
+    },
+    {
+      "p": "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+      "t": "file"
+    },
+    {
+      "p": "android/app/src/main/res/values",
+      "t": "dir"
+    },
+    {
+      "p": "android/app/src/main/res/values-night",
+      "t": "dir"
+    },
+    {
+      "p": "android/app/src/main/res/values-night/styles.xml",
+      "t": "file"
+    },
+    {
+      "p": "android/app/src/main/res/values/styles.xml",
+      "t": "file"
+    },
+    {
+      "p": "android/app/src/profile",
+      "t": "dir"
+    },
+    {
+      "p": "android/app/src/profile/AndroidManifest.xml",
+      "t": "file"
+    },
+    {
+      "p": "android/build.gradle.kts",
+      "t": "file"
+    },
+    {
+      "p": "android/gradle",
+      "t": "dir"
+    },
+    {
+      "p": "android/gradle/wrapper",
+      "t": "dir"
+    },
+    {
+      "p": "android/gradle/wrapper/gradle-wrapper.properties",
+      "t": "file"
+    },
+    {
+      "p": "android/gradle.properties",
+      "t": "file"
+    },
+    {
+      "p": "android/settings.gradle.kts",
+      "t": "file"
+    },
+    {
+      "p": "ios",
+      "t": "dir"
+    },
+    {
+      "p": "ios/Flutter",
+      "t": "dir"
+    },
+    {
+      "p": "ios/Flutter/AppFrameworkInfo.plist",
+      "t": "file"
+    },
+    {
+      "p": "ios/Flutter/Debug.xcconfig",
+      "t": "file"
+    },
+    {
+      "p": "ios/Flutter/Release.xcconfig",
+      "t": "file"
+    },
+    {
+      "p": "ios/Podfile",
+      "t": "file"
+    },
+    {
+      "p": "ios/Runner",
+      "t": "dir"
+    },
+    {
+      "p": "ios/Runner/AppDelegate.swift",
+      "t": "file"
+    },
+    {
+      "p": "ios/Runner/Assets.xcassets",
+      "t": "dir"
+    },
+    {
+      "p": "ios/Runner/Assets.xcassets/AppIcon.appiconset",
+      "t": "dir"
+    },
+    {
+      "p": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json",
+      "t": "file"
+    },
+    {
+      "p": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "t": "file"
+    },
+    {
+      "p": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png",
+      "t": "file"
+    },
+    {
+      "p": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png",
+      "t": "file"
+    },
+    {
+      "p": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png",
+      "t": "file"
+    },
+    {
+      "p": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png",
+      "t": "file"
+    },
+    {
+      "p": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png",
+      "t": "file"
+    },
+    {
+      "p": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png",
+      "t": "file"
+    },
+    {
+      "p": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png",
+      "t": "file"
+    },
+    {
+      "p": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png",
+      "t": "file"
+    },
+    {
+      "p": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png",
+      "t": "file"
+    },
+    {
+      "p": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png",
+      "t": "file"
+    },
+    {
+      "p": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png",
+      "t": "file"
+    },
+    {
+      "p": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png",
+      "t": "file"
+    },
+    {
+      "p": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png",
+      "t": "file"
+    },
+    {
+      "p": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png",
+      "t": "file"
+    },
+    {
+      "p": "ios/Runner/Assets.xcassets/LaunchImage.imageset",
+      "t": "dir"
+    },
+    {
+      "p": "ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json",
+      "t": "file"
+    },
+    {
+      "p": "ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png",
+      "t": "file"
+    },
+    {
+      "p": "ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png",
+      "t": "file"
+    },
+    {
+      "p": "ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png",
+      "t": "file"
+    },
+    {
+      "p": "ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md",
+      "t": "file"
+    },
+    {
+      "p": "ios/Runner/Base.lproj",
+      "t": "dir"
+    },
+    {
+      "p": "ios/Runner/Base.lproj/LaunchScreen.storyboard",
+      "t": "file"
+    },
+    {
+      "p": "ios/Runner/Base.lproj/Main.storyboard",
+      "t": "file"
+    },
+    {
+      "p": "ios/Runner/Info.plist",
+      "t": "file"
+    },
+    {
+      "p": "ios/Runner/Runner-Bridging-Header.h",
+      "t": "file"
+    },
+    {
+      "p": "ios/Runner.xcodeproj",
+      "t": "dir"
+    },
+    {
+      "p": "ios/Runner.xcodeproj/project.pbxproj",
+      "t": "file"
+    },
+    {
+      "p": "ios/Runner.xcodeproj/project.xcworkspace",
+      "t": "dir"
+    },
+    {
+      "p": "ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata",
+      "t": "file"
+    },
+    {
+      "p": "ios/Runner.xcodeproj/project.xcworkspace/xcshareddata",
+      "t": "dir"
+    },
+    {
+      "p": "ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist",
+      "t": "file"
+    },
+    {
+      "p": "ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings",
+      "t": "file"
+    },
+    {
+      "p": "ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/swiftpm",
+      "t": "dir"
+    },
+    {
+      "p": "ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/configuration",
+      "t": "dir"
+    },
+    {
+      "p": "ios/Runner.xcodeproj/xcshareddata",
+      "t": "dir"
+    },
+    {
+      "p": "ios/Runner.xcodeproj/xcshareddata/xcschemes",
+      "t": "dir"
+    },
+    {
+      "p": "ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme",
+      "t": "file"
+    },
+    {
+      "p": "ios/Runner.xcworkspace",
+      "t": "dir"
+    },
+    {
+      "p": "ios/Runner.xcworkspace/contents.xcworkspacedata",
+      "t": "file"
+    },
+    {
+      "p": "ios/Runner.xcworkspace/xcshareddata",
+      "t": "dir"
+    },
+    {
+      "p": "ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist",
+      "t": "file"
+    },
+    {
+      "p": "ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings",
+      "t": "file"
+    },
+    {
+      "p": "ios/RunnerTests",
+      "t": "dir"
+    },
+    {
+      "p": "ios/RunnerTests/RunnerTests.swift",
+      "t": "file"
+    },
+    {
+      "p": "lib",
+      "t": "dir"
+    },
+    {
+      "p": "lib/app.dart",
+      "t": "file"
+    },
+    {
+      "p": "lib/features",
+      "t": "dir"
+    },
+    {
+      "p": "lib/features/onboarding",
+      "t": "dir"
+    },
+    {
+      "p": "lib/features/onboarding/bindings.dart",
+      "t": "file"
+    },
+    {
+      "p": "lib/features/onboarding/presentation",
+      "t": "dir"
+    },
+    {
+      "p": "lib/features/onboarding/presentation/controller",
+      "t": "dir"
+    },
+    {
+      "p": "lib/features/onboarding/presentation/controller/onboarding_controller.dart",
+      "t": "file"
+    },
+    {
+      "p": "lib/features/onboarding/presentation/pages",
+      "t": "dir"
+    },
+    {
+      "p": "lib/features/onboarding/presentation/pages/intro_page.dart",
+      "t": "file"
+    },
+    {
+      "p": "lib/features/onboarding/presentation/pages/onboarding_page.dart",
+      "t": "file"
+    },
+    {
+      "p": "lib/features/onboarding/presentation/pages/onboarding_steps.dart",
+      "t": "file"
+    },
+    {
+      "p": "lib/features/onboarding/presentation/pages/privacy_page.dart",
+      "t": "file"
+    },
+    {
+      "p": "lib/features/onboarding/presentation/pages/theme_choice_page.dart",
+      "t": "file"
+    },
+    {
+      "p": "lib/features/onboarding/presentation/widgets",
+      "t": "dir"
+    },
+    {
+      "p": "lib/features/onboarding/presentation/widgets/dots_indicator.dart",
+      "t": "file"
+    },
+    {
+      "p": "lib/features/onboarding/presentation/widgets/onboarding_screen.dart",
+      "t": "file"
+    },
+    {
+      "p": "lib/features/onboarding/presentation/widgets/progress_dots.dart",
+      "t": "file"
+    },
+    {
+      "p": "lib/features/onboarding/presentation/widgets/slide_card.dart",
+      "t": "file"
+    },
+    {
+      "p": "lib/flavors.dart",
+      "t": "file"
+    },
+    {
+      "p": "lib/main.dart",
+      "t": "file"
+    },
+    {
+      "p": "lib/main_common.dart",
+      "t": "file"
+    },
+    {
+      "p": "lib/main_dev.dart",
+      "t": "file"
+    },
+    {
+      "p": "lib/main_prod.dart",
+      "t": "file"
+    },
+    {
+      "p": "lib/main_staging.dart",
+      "t": "file"
+    },
+    {
+      "p": "lib/routes.dart",
+      "t": "file"
+    },
+    {
+      "p": "linux",
+      "t": "dir"
+    },
+    {
+      "p": "linux/CMakeLists.txt",
+      "t": "file"
+    },
+    {
+      "p": "linux/flutter",
+      "t": "dir"
+    },
+    {
+      "p": "linux/flutter/CMakeLists.txt",
+      "t": "file"
+    },
+    {
+      "p": "linux/flutter/generated_plugin_registrant.cc",
+      "t": "file"
+    },
+    {
+      "p": "linux/flutter/generated_plugin_registrant.h",
+      "t": "file"
+    },
+    {
+      "p": "linux/flutter/generated_plugins.cmake",
+      "t": "file"
+    },
+    {
+      "p": "linux/runner",
+      "t": "dir"
+    },
+    {
+      "p": "linux/runner/CMakeLists.txt",
+      "t": "file"
+    },
+    {
+      "p": "linux/runner/main.cc",
+      "t": "file"
+    },
+    {
+      "p": "linux/runner/my_application.cc",
+      "t": "file"
+    },
+    {
+      "p": "linux/runner/my_application.h",
+      "t": "file"
+    },
+    {
+      "p": "macos",
+      "t": "dir"
+    },
+    {
+      "p": "macos/Flutter",
+      "t": "dir"
+    },
+    {
+      "p": "macos/Flutter/Flutter-Debug.xcconfig",
+      "t": "file"
+    },
+    {
+      "p": "macos/Flutter/Flutter-Release.xcconfig",
+      "t": "file"
+    },
+    {
+      "p": "macos/Flutter/GeneratedPluginRegistrant.swift",
+      "t": "file"
+    },
+    {
+      "p": "macos/Podfile",
+      "t": "file"
+    },
+    {
+      "p": "macos/Runner",
+      "t": "dir"
+    },
+    {
+      "p": "macos/Runner/AppDelegate.swift",
+      "t": "file"
+    },
+    {
+      "p": "macos/Runner/Assets.xcassets",
+      "t": "dir"
+    },
+    {
+      "p": "macos/Runner/Assets.xcassets/AppIcon.appiconset",
+      "t": "dir"
+    },
+    {
+      "p": "macos/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json",
+      "t": "file"
+    },
+    {
+      "p": "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_1024.png",
+      "t": "file"
+    },
+    {
+      "p": "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_128.png",
+      "t": "file"
+    },
+    {
+      "p": "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_16.png",
+      "t": "file"
+    },
+    {
+      "p": "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_256.png",
+      "t": "file"
+    },
+    {
+      "p": "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_32.png",
+      "t": "file"
+    },
+    {
+      "p": "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_512.png",
+      "t": "file"
+    },
+    {
+      "p": "macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_64.png",
+      "t": "file"
+    },
+    {
+      "p": "macos/Runner/Base.lproj",
+      "t": "dir"
+    },
+    {
+      "p": "macos/Runner/Base.lproj/MainMenu.xib",
+      "t": "file"
+    },
+    {
+      "p": "macos/Runner/Configs",
+      "t": "dir"
+    },
+    {
+      "p": "macos/Runner/Configs/AppInfo.xcconfig",
+      "t": "file"
+    },
+    {
+      "p": "macos/Runner/Configs/Debug.xcconfig",
+      "t": "file"
+    },
+    {
+      "p": "macos/Runner/Configs/Release.xcconfig",
+      "t": "file"
+    },
+    {
+      "p": "macos/Runner/Configs/Warnings.xcconfig",
+      "t": "file"
+    },
+    {
+      "p": "macos/Runner/DebugProfile.entitlements",
+      "t": "file"
+    },
+    {
+      "p": "macos/Runner/Info.plist",
+      "t": "file"
+    },
+    {
+      "p": "macos/Runner/MainFlutterWindow.swift",
+      "t": "file"
+    },
+    {
+      "p": "macos/Runner/Release.entitlements",
+      "t": "file"
+    },
+    {
+      "p": "macos/Runner.xcodeproj",
+      "t": "dir"
+    },
+    {
+      "p": "macos/Runner.xcodeproj/project.pbxproj",
+      "t": "file"
+    },
+    {
+      "p": "macos/Runner.xcodeproj/project.xcworkspace",
+      "t": "dir"
+    },
+    {
+      "p": "macos/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata",
+      "t": "file"
+    },
+    {
+      "p": "macos/Runner.xcodeproj/project.xcworkspace/xcshareddata",
+      "t": "dir"
+    },
+    {
+      "p": "macos/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist",
+      "t": "file"
+    },
+    {
+      "p": "macos/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings",
+      "t": "file"
+    },
+    {
+      "p": "macos/Runner.xcodeproj/xcshareddata",
+      "t": "dir"
+    },
+    {
+      "p": "macos/Runner.xcodeproj/xcshareddata/xcschemes",
+      "t": "dir"
+    },
+    {
+      "p": "macos/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme",
+      "t": "file"
+    },
+    {
+      "p": "macos/Runner.xcworkspace",
+      "t": "dir"
+    },
+    {
+      "p": "macos/Runner.xcworkspace/contents.xcworkspacedata",
+      "t": "file"
+    },
+    {
+      "p": "macos/Runner.xcworkspace/xcshareddata",
+      "t": "dir"
+    },
+    {
+      "p": "macos/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist",
+      "t": "file"
+    },
+    {
+      "p": "macos/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings",
+      "t": "file"
+    },
+    {
+      "p": "pubspec.lock",
+      "t": "file"
+    },
+    {
+      "p": "pubspec.yaml",
+      "t": "file"
+    },
+    {
+      "p": "test",
+      "t": "dir"
+    },
+    {
+      "p": "test/widget_test.dart",
+      "t": "file"
+    },
+    {
+      "p": "web",
+      "t": "dir"
+    },
+    {
+      "p": "web/favicon.png",
+      "t": "file"
+    },
+    {
+      "p": "web/icons",
+      "t": "dir"
+    },
+    {
+      "p": "web/icons/Icon-192.png",
+      "t": "file"
+    },
+    {
+      "p": "web/icons/Icon-512.png",
+      "t": "file"
+    },
+    {
+      "p": "web/icons/Icon-maskable-192.png",
+      "t": "file"
+    },
+    {
+      "p": "web/icons/Icon-maskable-512.png",
+      "t": "file"
+    },
+    {
+      "p": "web/index.html",
+      "t": "file"
+    },
+    {
+      "p": "web/manifest.json",
+      "t": "file"
+    },
+    {
+      "p": "windows",
+      "t": "dir"
+    },
+    {
+      "p": "windows/CMakeLists.txt",
+      "t": "file"
+    },
+    {
+      "p": "windows/flutter",
+      "t": "dir"
+    },
+    {
+      "p": "windows/flutter/CMakeLists.txt",
+      "t": "file"
+    },
+    {
+      "p": "windows/flutter/generated_plugin_registrant.cc",
+      "t": "file"
+    },
+    {
+      "p": "windows/flutter/generated_plugin_registrant.h",
+      "t": "file"
+    },
+    {
+      "p": "windows/flutter/generated_plugins.cmake",
+      "t": "file"
+    },
+    {
+      "p": "windows/runner",
+      "t": "dir"
+    },
+    {
+      "p": "windows/runner/CMakeLists.txt",
+      "t": "file"
+    },
+    {
+      "p": "windows/runner/Runner.rc",
+      "t": "file"
+    },
+    {
+      "p": "windows/runner/flutter_window.cpp",
+      "t": "file"
+    },
+    {
+      "p": "windows/runner/flutter_window.h",
+      "t": "file"
+    },
+    {
+      "p": "windows/runner/main.cpp",
+      "t": "file"
+    },
+    {
+      "p": "windows/runner/resource.h",
+      "t": "file"
+    },
+    {
+      "p": "windows/runner/resources",
+      "t": "dir"
+    },
+    {
+      "p": "windows/runner/resources/app_icon.ico",
+      "t": "file"
+    },
+    {
+      "p": "windows/runner/runner.exe.manifest",
+      "t": "file"
+    },
+    {
+      "p": "windows/runner/utils.cpp",
+      "t": "file"
+    },
+    {
+      "p": "windows/runner/utils.h",
+      "t": "file"
+    },
+    {
+      "p": "windows/runner/win32_window.cpp",
+      "t": "file"
+    },
+    {
+      "p": "windows/runner/win32_window.h",
+      "t": "file"
+    }
+  ]
+}
