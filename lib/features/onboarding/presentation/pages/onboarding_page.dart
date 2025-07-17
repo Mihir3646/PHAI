@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:relaunch_programming/routes.dart';
 
-import '../../../routes.dart';
 import '../controller/onboarding_controller.dart';
 import '../widgets/slide_card.dart';
 import '../widgets/dots_indicator.dart';
